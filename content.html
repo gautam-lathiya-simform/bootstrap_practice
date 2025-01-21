@@ -41,99 +41,131 @@
         </div><br><br> -->
 
     <!-- Typography -->
-    <h3>=>Headings using class name</h3>
+        <!-- <h3>=>Headings using class name</h3>
+        <div class="container-fluid border border-dark px-0">
+            <p class="h1">h1. Bootstrap heading</p>
+            <p class="h2">h2. Bootstrap heading</p>
+        </div><br><br>
+
+        <h3>=>Customizing headings using "text-muted" class </h3>
+        <div class="container-fluid border border-dark px-0">
+            <h3>
+                Fancy display heading
+                <small class="text-muted">With faded secondary text</small>
+            </h3>
+        </div><br><br>
+
+        <h3>=>Display headings from display-1 to display-6 </h3>
+        <div class="container-fluid border border-dark px-0">
+            <h1 class="display-1">Display 1</h1>
+            <h1 class="display-2">Display 2</h1>
+        </div><br><br>
+
+        <h3>=>"lead" class to show lead text </h3>
+        <div class="container-fluid border border-dark px-0">
+            <p class="lead">
+                This is a lead paragraph. It stands out from regular paragraphs.
+            </p>
+        </div><br><br>
+
+        <h3>=>Naming a source </h3>
+        <div class="container-fluid border border-dark px-0">
+            <figure class="text-end">
+                <blockquote class="blockquote">
+                <p>We can have "text-center" and "text-start" class in figure element</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+        </div><br><br>
+
+        <h3>=>Unstyle lists </h3>
+        <div class="container-fluid border border-dark px-0">
+            <ul class="list-unstyled">
+                <li>1</li>
+                <li>2</li>
+                <li>Nested lists:
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                </ul>
+                </li>
+            </ul>
+        </div><br><br>
+
+        <h3>=>Inline</h3>
+        <div class="container-fluid border border-dark px-0">
+            <div class="border border-dark">Remove a list’s bullets and apply some light margin with a combination of two classes, .list-inline and .list-inline-item.</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">This is a list item.</li>
+                <li class="list-inline-item">And another one.</li>
+                <li class="list-inline-item">But they're displayed inline.</li>
+            </ul>
+        </div><br><br>
+
+        <h3>=>Description list alignment</h3>
+        <div class="container-fluid border border-dark px-0">
+            <div class="border border-dark">Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a .text-truncate class to truncate the text with an ellipsis.<strong>Note: resize the window to see truncate.</strong></div>
+            <div class="border border-dark">
+                <dl class="row">
+                    <dt class="col-sm-3">Description lists</dt>
+                    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+                
+                    <dt class="col-sm-3">Term</dt>
+                    <dd class="col-sm-9">
+                    <p>Definition for the term.</p>
+                    <p>And some more placeholder definition text.</p>
+                    </dd>
+                
+                    <dt class="col-sm-3">Another term</dt>
+                    <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+                
+                    <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                    <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+                
+                    <dt class="col-sm-3">Nesting</dt>
+                    <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">Nested definition list</dt>
+                        <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+                    </dl>
+                    </dd>
+                </dl>
+            </div>
+        </div><br><br> -->
+
+    <!-- Images -->
+    <h3>=>Responsive images</h3>
     <div class="container-fluid border border-dark px-0">
-        <p class="h1">h1. Bootstrap heading</p>
-        <p class="h2">h2. Bootstrap heading</p>
+        <div class="border border-dark">Images in Bootstrap are made responsive with .img-fluid. This applies max-width: 100%; and height: auto; to the image so that it scales with the parent element.</div>
+        <img src="https://thewowstyle.com/wp-content/uploads/2015/01/images-of-nature-4.jpg" class="img-fluid" style="width: 300px; height: 300px;" alt="...">
+    </div><br><br>
+    
+    <h3>=>Image thumbnails</h3>
+    <div class="container-fluid border border-dark px-0">
+        <div class="border border-dark"></div>
+        <img src="https://thewowstyle.com/wp-content/uploads/2015/01/images-of-nature-4.jpg" class="img-thumbnail" style="width: 300px; height: 300px;" alt="...">
     </div><br><br>
 
-    <h3>=>Customizing headings using "text-muted" class </h3>
+    <h3>=>Aligning imagess</h3>
+    <div class="container-fluid border border-dark px-0 clearfix">
+        <img src="https://thewowstyle.com/wp-content/uploads/2015/01/images-of-nature-4.jpg" class="rounded float-start" style="width: 100px; height: 100px;" alt="1">
+        <img src="https://thewowstyle.com/wp-content/uploads/2015/01/images-of-nature-4.jpg" class="rounded float-end" style="width: 100px; height: 100px;" alt="2">
+    </div>
     <div class="container-fluid border border-dark px-0">
-        <h3>
-            Fancy display heading
-            <small class="text-muted">With faded secondary text</small>
-        </h3>
+        <img src="https://thewowstyle.com/wp-content/uploads/2015/01/images-of-nature-4.jpg" class="rounded mx-auto d-block" style="width: 100px; height: 100px;" alt="3">
+        <!-- Alternative line 157 is (159 to 161) -->
+        <!-- <div class="text-center">
+            <img src="..." class="rounded" alt="...">
+        </div> -->
     </div><br><br>
 
-    <h3>=>Display headings from display-1 to display-6 </h3>
+    <h3>=>Picture</h3>
     <div class="container-fluid border border-dark px-0">
-        <h1 class="display-1">Display 1</h1>
-        <h1 class="display-2">Display 2</h1>
+        <div class="border border-dark">If you are using the <code>&lt;picture&gt;</code> element to specify multiple <code>&lt;source&gt;</code> elements for a specific <code>&lt;img&gt;</code>, make sure to add the .img-* classes to the <code>&lt;img&gt;</code> and not to the <code>&lt;picture&gt;</code> tag.</div>
     </div><br><br>
-
-    <h3>=>"lead" class to show lead text </h3>
-    <div class="container-fluid border border-dark px-0">
-        <p class="lead">
-            This is a lead paragraph. It stands out from regular paragraphs.
-        </p>
-    </div><br><br>
-
-    <h3>=>Naming a source </h3>
-    <div class="container-fluid border border-dark px-0">
-        <figure class="text-end">
-            <blockquote class="blockquote">
-              <p>We can have "text-center" and "text-start" class in figure element</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </figcaption>
-          </figure>
-    </div><br><br>
-
-    <h3>=>Unstyle lists </h3>
-    <div class="container-fluid border border-dark px-0">
-        <ul class="list-unstyled">
-            <li>1</li>
-            <li>2</li>
-            <li>Nested lists:
-              <ul>
-                <li>one</li>
-                <li>two</li>
-              </ul>
-            </li>
-        </ul>
-    </div><br><br>
-
-    <h3>=>Inline</h3>
-    <div class="container-fluid border border-dark px-0">
-        <div class="border border-dark">Remove a list’s bullets and apply some light margin with a combination of two classes, .list-inline and .list-inline-item.</div>
-        <ul class="list-inline">
-            <li class="list-inline-item">This is a list item.</li>
-            <li class="list-inline-item">And another one.</li>
-            <li class="list-inline-item">But they're displayed inline.</li>
-        </ul>
-    </div><br><br>
-
-    <h3>=>Description list alignment</h3>
-    <div class="container-fluid border border-dark px-0">
-        <div class="border border-dark">Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a .text-truncate class to truncate the text with an ellipsis.<strong>Note: resize the window to see truncate.</strong></div>
-        <div class="border border-dark">
-            <dl class="row">
-                <dt class="col-sm-3">Description lists</dt>
-                <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
-              
-                <dt class="col-sm-3">Term</dt>
-                <dd class="col-sm-9">
-                  <p>Definition for the term.</p>
-                  <p>And some more placeholder definition text.</p>
-                </dd>
-              
-                <dt class="col-sm-3">Another term</dt>
-                <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
-              
-                <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-                <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
-              
-                <dt class="col-sm-3">Nesting</dt>
-                <dd class="col-sm-9">
-                  <dl class="row">
-                    <dt class="col-sm-4">Nested definition list</dt>
-                    <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
-                  </dl>
-                </dd>
-              </dl>
-        </div>
-    </div><br><br>
+    
 
     <!-- Bootstrap files -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
